@@ -46,6 +46,9 @@ mysql -u root -p12350 swolkout < ./SwolKout-Workout-Tracker/database/swolkout.sq
 ```
 - ATTENTION: if you set another password for root make sure to change ```-p12350``` with ```-p[your_password]```
 
+Now you should be able to access the web application at: http://localhost
+
+
 **Important notes after installation**
 - the default admin login credentials are:
    - email: ```admin@example.com```
