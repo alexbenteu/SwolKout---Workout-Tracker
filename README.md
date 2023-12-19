@@ -19,31 +19,31 @@ Now you should be able to access the web application at: http://localhost:8876
 
 ```sudo apt install apache2 mariadb-server mysql-common php php-mysqli libapache2-mod-php -y```
 
-2. Clone the repostitory
-3. Copy the website code into the file ```/var/www/html```
+2. Clone the repostitory.
+3. Copy the website code into the file ```/var/www/html```.
 
 ```sudo cp -r SwolKout-Workout-Tracker/src/html /var/www/html```
 
-4. Give the proper permissions to ```exerciselist.txt```
+4. Give the proper permissions to ```exerciselist.txt```.
 
 ```sudo chmod +w /var/www/html/exerciselist.txt```
 
-5. Clone [PHPMailer](https://github.com/PHPMailer/PHPMailer.git) into the website folder
+5. Clone [PHPMailer](https://github.com/PHPMailer/PHPMailer.git) into the website folder.
 
 ```git clone https://github.com/PHPMailer/PHPMailer.git /var/www/html```
 
-5. Start mysql
+5. Start mysql.
 
 ```mysqld_safe &```
 
-7. Set the password and the privileges for the user ```root```
+7. Set the password and the privileges for the user ```root```.
 ```
 mysql -u root -e "SET PASSWORD FOR 'root'@'localhost' = PASSWORD('12345');"
 mysql -u root -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '12345' WITH GRANT OPTION;"
 mysql -u root -e "FLUSH PRIVILEGES;"
 ```
 - ATTENTION: if you set another password for root make sure to update ```/var/www/html/database.php``` with the modified password.
-8. Import the database
+8. Import the database.
 ```
 mysql -u root -e "CREATE DATABASE IF NOT EXISTS swolkout;"
 mysql -u root -p12350 swolkout < ./SwolKout-Workout-Tracker/database/swolkout.sql
@@ -57,4 +57,4 @@ Now you should be able to access the web application at: http://localhost
 - the default admin login credentials are:
    - email: ```admin@example.com```
    - password: ```password```
-- the official docker image can be found [here](https://hub.docker.com/r/yeettkds/swolkout)
+- the official docker image can be found [here](https://hub.docker.com/r/yeettkds/swolkout).
