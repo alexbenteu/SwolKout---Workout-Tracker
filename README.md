@@ -45,3 +45,8 @@ mysql -u root -e "CREATE DATABASE IF NOT EXISTS swolkout;"
 mysql -u root -p12350 swolkout < ./SwolKout-Workout-Tracker/database/swolkout.sql
 ```
 - ATTENTION: if you set another password for root make sure to change ```-p12350``` with ```-p[your_password]```
+
+**Important notes after installation**
+- the default admin login credentials are:
+   - email: ```admin@example.com```
+   - password: ```password```
