@@ -22,7 +22,7 @@ Now you should be able to access the web application at: http://localhost:8876
 2. Clone the repostitory.
 3. Copy the website code into the file ```/var/www/html```.
 
-```sudo cp -r SwolKout-Workout-Tracker/src/html /var/www/html```
+```sudo cp -r ./SwolKout-Workout-Tracker/src/html /var/www/html```
 
 4. Give the proper permissions to ```exerciselist.txt```.
 
