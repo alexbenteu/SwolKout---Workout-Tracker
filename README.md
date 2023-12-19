@@ -28,6 +28,10 @@ Now you should be able to access the web application at: http://localhost:8876
 
 ```sudo chmod +w /var/www/html/exerciselist.txt```
 
+5. Clone [PHPMailer](https://github.com/PHPMailer/PHPMailer.git) into the website folder
+
+```git clone https://github.com/PHPMailer/PHPMailer.git /var/www/html```
+
 5. Start mysql
 
 ```mysqld_safe &```
