@@ -20,7 +20,7 @@ Now you should be able to access the web application at: http://localhost:8876
 ```sudo apt install apache2 mariadb-server mysql-common php php-mysqli libapache2-mod-php -y```
 
 2. Clone the repostitory
-3. Copy the website code into ```/var/www/html```
+3. Copy the website code into the file ```/var/www/html```
 
 ```sudo cp -r SwolKout-Workout-Tracker/src/html /var/www/html```
 
