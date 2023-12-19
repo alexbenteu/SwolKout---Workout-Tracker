@@ -57,3 +57,4 @@ Now you should be able to access the web application at: http://localhost
 - the default admin login credentials are:
    - email: ```admin@example.com```
    - password: ```password```
+- the official docker image can be found [here](https://hub.docker.com/r/yeettkds/swolkout)
