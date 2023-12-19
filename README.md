@@ -30,7 +30,7 @@ Now you should be able to access the web application at: http://localhost:8876
 
 5. Start mysql
 
-```mysqld_safe```
+```mysqld_safe &```
 
 7. Set the password and the privileges for the user ```root```
 ```
