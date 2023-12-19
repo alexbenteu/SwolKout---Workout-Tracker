@@ -25,3 +25,22 @@ Now you should be able to access the web application at: http://localhost:8876
 ```sudo cp -r SwolKout-Workout-Tracker/src/html /var/www/html```
 
 4. Give the proper permissions to ```exerciselist.txt```
+
+```sudo chmod +w /var/www/html/exerciselist.txt```
+
+5. Start mysql
+
+```mysqld_safe```
+
+7. Set the password and the privileges for the user ```root```
+```
+mysql -u root -e "SET PASSWORD FOR 'root'@'localhost' = PASSWORD('12345');"
+mysql -u root -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '12345' WITH GRANT OPTION;"
+mysql -u root -e "FLUSH PRIVILEGES;"
+```
+- ATTENTION: if you set another password for root make sure to update ```/var/www/html/database.php``` with the modified password.
+8. Import the database
+```
+mysql -u root -e "CREATE DATABASE IF NOT EXISTS swolkout;"
+mysql -u root -p12350 swolkout < ./SwolKout-Workout-Tracker/database/swolkout.sql
+```
